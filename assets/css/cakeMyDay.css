@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background: repeating-linear-gradient(90deg, #E2C9D7, #e4b5cf 20px, #E9D2DF 0, #E9D2DF 40px);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+img{
+    max-width: 100%;
+}
+#container {
+    background-color: #ffffffbe;
+    width: 70%;
+    margin: 20px auto;
+    border-left: solid 10px #b934a2;
+}
+
+/* ****************HEADER*********** */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 20vh;
+    padding: 5px;
+}
+.logo{
+    width: 100px;
+}
+
+h1 {
+    background-color: #b934a2;
+    color: white;
+    font-weight: 300;
+    font-size: larger;
+    letter-spacing: 3px;
+    margin-right: 5px;
+}
+h2 {
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #b934a2;
+    background-color: white;
+    margin: 15px 0;
+}
+
+.adress {
+    color: #b934a2;
+    letter-spacing: 2px;
+}
+/*  ************section presentation************ */
+
+.presentation{
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+}
+.presentationText {
+    font-size: 20px;
+}
+
+.ps {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* **************SECTION FREE CUPCAKES********* */
+.freeCupcake {
+    display: flex;
+    align-items: start;
+}
+
+.cupcake1 {
+    width: 100%;
+}
+
+.cupcakeCard {
+    margin: 0 15px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.legende{
+    margin: 0 10px;
+}
+.legende p{
+    font-size: 14px;
+}
+.freeCupcake h2{
+    margin: 0;
+}
+
+.why {
+    width: 50%;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #b934a2;
+    color: white;
+    border: solid 0.5px black;
+    font-weight: 600;
+    width: 100px;
+    height: 30px;
+}
+
+/* *****************SECTION SAMPLE*********** */
+.sample {
+    display: flex;
+    justify-content: space-around
+}
+
+figure {
+    width: 30%;
+    margin: 10px;
+
+}
+
+figure img {
+    width: 100%;
+
+}
+
+figcaption {
+    height: 30%;
+    background-color: #f1ebef;
+    padding: 10px;
+    font-size: 0.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+/* *********************FOOTER**************** */
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+tr:nth-child(odd) {
+    background-color: #e967d3b6;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+table tr,
+table th {
+    font-weight: 400;
+}
+
+.hours,
+.map {
+    width: 45%;
+}
+
+.hours {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* *****************MEDIA QUERIES ********************/
+@media screen and (max-width:770px) {
+    #container {
+        border: none;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    h2 {
+        color: rgb(49, 48, 48);
+        background-color: #ffffff00;
+        padding: 20px;
+        letter-spacing: 2px;
+    }
+    p{
+        color: rgb(49, 49, 49);
+    }
+
+    .logo {
+        width: 30%;
+        padding-top: 20px;
+    }
+
+    .adress {
+        color: black;
+    }
+
+    .day {
+        display: none;
+    }
+
+    .presentation {
+        width: 100%;
+        background-color: #b934a2;
+        padding: 20px;
+    }
+
+    .freeCupcake {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cupcakeCard,
+    .why {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cupcakeImg {
+        width: 50%;
+    }
+
+    .why p {
+        padding: 20px;
+    }
+
+    button {
+        background-color: rgb(233, 228, 231);
+        color: rgb(95, 94, 94);
+        border: none;
+        border-radius: 10px;
+        text-transform: lowercase;
+        font-size: medium;
+        font-weight: 400;
+        height: 40px;
+        box-shadow: 4px 5px 16px -5px rgba(0, 0, 0, 0.43);
+    }
+
+    button:hover {
+        box-shadow: inset 3px 1px 16px -5px rgba(0, 0, 0, 0.43);
+    }
+
+    .bgMobile, footer {
+        background: repeating-linear-gradient(90deg, #E2C9D7, #e4b5cf 20px, #E9D2DF 0, #E9D2DF 40px);
+    }
+    .sample{
+        display: flex;
+        flex-direction: column;
+    }
+    figure{
+        width: 95%; 
+    }
+    figcaption{
+        background-color: #e2c9d700;
+    }
+    footer{
+        justify-content: space-between;
+    }
+    .map{
+        display: none;
+    }
+
+    tr:nth-child(odd), tr:nth-child(even){
+        background-color: #e2c9d700;
+    }
+}
+
+@media screen and (max-width:575px){
+
+    #container {
+        border: none;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    h2 {
+        color: rgb(49, 48, 48);
+        background-color: #ffffff00;
+        padding: 20px;
+        letter-spacing: 2px;
+    }
+    p{
+        color: rgb(49, 49, 49);
+    }
+
+    .logo {
+        width: 30%;
+        padding-top: 20px;
+    }
+
+    .adress {
+        color: black;
+    }
+
+    .day {
+        display: none;
+    }
+
+    .presentation {
+        width: 100%;
+        background-color: #b934a2;
+        padding: 20px;
+    }
+
+    .freeCupcake {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cupcakeCard,
+    .why {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cupcakeImg {
+        width: 50%;
+    }
+
+    .why p {
+        padding: 20px;
+    }
+
+    button {
+        background-color: rgb(233, 228, 231);
+        color: rgb(95, 94, 94);
+        border: none;
+        border-radius: 10px;
+        text-transform: lowercase;
+        font-size: medium;
+        font-weight: 400;
+        height: 40px;
+        box-shadow: 4px 5px 16px -5px rgba(0, 0, 0, 0.43);
+    }
+
+    button:hover {
+        box-shadow: inset 3px 1px 16px -5px rgba(0, 0, 0, 0.43);
+    }
+
+    .bgMobile, footer {
+        background: repeating-linear-gradient(90deg, #E2C9D7, #e4b5cf 20px, #E9D2DF 0, #E9D2DF 40px);
+    }
+    .sample{
+        display: flex;
+        flex-direction: column;
+    }
+    figure{
+        width: 95%; 
+    }
+    figcaption{
+        background-color: #e2c9d700;
+    }
+    footer{
+        justify-content: space-between;
+    }
+    .map{
+        display: none;
+    }
+
+    tr:nth-child(odd), tr:nth-child(even){
+        background-color: #e2c9d700;
+    }
+}
+
